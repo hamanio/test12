@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="General">
+      <div class="topArea">
+        <div class="generalTitle">QBCore#4011</div>
+        <div class="generalSubTitle">QBCore#4011 MENU</div>
+        <div class="linevector"></div>
+        <div class="lineEffect2"></div>
+        <div class="totalPlayersBox">
+          <div class="totalPlayersTexts">البنق</div>
+          <div class="totalPlayersSay" id="ping">32ms</div>
+        </div>
+        <div class="totalPlayersBox">
+          <div class="totalPlayersTexts">عدد الملفات</div>
+          <div class="totalPlayersSay" id="files">192</div>
+        </div>
+      </div>
+      <div class="bottomArea">
+        <div class="bottomListBoxs">
+          <div class="listTitle"> إعدادات <span>الغرافيك</span></div>
+          <div class="listButtonBox">
+            <div class="listButton" onclick="fpschanger(1)">
+              جودة <span>+متوسطة</span>
+            </div>
+            <div class="listButton" onclick="fpschanger(2)">
+              جودة <span>++منخفضة</span>
+            </div>
+            <div class="listButton" onclick="fpschanger(3)">
+              جودة <span>+++منخفضة جدا</span>
+            </div>
+          </div>
+        </div>
+        <div class="bottomListLine"></div>
+        <div class="bottomListBoxs">
+          <div class="listTitle">إعدادات <span>التفاصيل</span></div>
+          <div class="listButtonBox2">
+            <div class="listButton2" onclick="advancedchanger(1)">
+              +++مدمج
+            </div>
+            <div class="listButton2" onclick="advancedchanger(3)">
+              ++الون عالية الجودة
+            </div>
+            <div class="listButton2" onclick="advancedchanger(2)">
+              +تعزيز الإضائة
+            </div>
+            <div
+              class="listButton2"
+              style="
+                background: linear-gradient(
+                  180deg,
+                  #ff3737 -27.42%,
+                  rgba(90, 14, 14, 0) 140.32%
+                );
+                border: 0.057vw solid rgba(0, 0, 0, 0.4);
+                filter: drop-shadow(0px 0px 1.2vw rgba(182, 83, 83, 0.57));
+              "
+              onclick="advancedchanger(4)"
+            >
+            إعادة تعيين التفاصيل
+            </div>
+          </div>
+        </div>
+        <div class="bottomListLine"></div>
+        <div class="bottomListBoxs">
+          <div class="listTitle"><span></span></div>
+          <div class="listButtonBox3">
+            <div class="currentFpsBox">
+              <div class="fpsTitleText">FPS</div>
+              <div class="fpsTitleSay">1</div>
+            </div>
+            <div class="RestartButton" onclick="reset()">
+              إعادة تعيين الإعدادات
+            </div>
+  </body>
+  <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+  <script src="js.js" type="text/javascript"></script>
+</html>
